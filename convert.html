@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>SHIFT | converter</title>
+
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<!---------------------------------------------------------------->
+
+<body>
+
+    <section id="buy" class="container content-section text-center white">
+
+        <div class="row">
+            <div class="col-md-5" align="right" style="padding:4px 8px;"></div>
+            <div class="col-md-6" align="left">
+                <h2>SHIFT Converter</h2>
+            </div>
+        </div>
+
+        <hr>
+        <h4></h4>
+
+        <div class="row">
+            <div class="col-md-5" align="right" style="padding:4px 8px;"><p>Equation</p></div>
+            <div class="col-md-6" align="left">
+                <textarea rows="1" cols="50" id="eqt" oninput="eqt_update()" onfocus="this.select()" style="padding:4px 8px;" required></textarea>
+            </div>
+        </div>
+
+        </br>
+
+        <div class="row">
+            <div class="col-md-5" align="right" style="padding:4px 8px;"><p>Decimal</p></div>
+            <div class="col-md-6" align="left">
+                <textarea rows="1" cols="40" id="dec" oninput="dec_update()" onfocus="this.select()" style="padding:4px 8px;" required>0</textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-5" align="right" style="padding:4px 8px;"><p>Hexadecimal</p></div>
+            <div class="col-md-6" align="left">
+                <textarea rows="1" cols="40" id="hex" oninput="hex_update()" onfocus="this.select()" style="padding:4px 8px;" required>0</textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-5" align="right" style="padding:4px 8px;"><p>Binary</p></div>
+            <div class="col-md-6" align="left">
+                <textarea rows="1" cols="40" id="bin" oninput="bin_update()" onfocus="this.select()" style="padding:4px 8px;" required>0</textarea>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-5" align="right" style="padding:4px 8px;"><p>UTF-8</p></div>
+            <div class="col-md-6" align="left">
+                <textarea rows="1" cols="40" id="utf" oninput="utf_update()" onfocus="this.select()" style="padding:4px 8px;" required></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-5" align="right" style="padding:4px 8px;"><p>Base64</p></div>
+            <div class="col-md-6" align="left">
+                <textarea rows="1" cols="40" id="b64" oninput="b64_update()" onfocus="this.select()" style="padding:4px 8px;" required></textarea>
+            </div>
+        </div>
+
+        <hr>
+
+
+        </section>
+
+
+
+    <!-- Core JavaScript Files -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js">  </script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/convert.js"></script>
+
+
+</body>
+</html>
